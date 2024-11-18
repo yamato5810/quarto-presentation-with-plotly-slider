@@ -6,6 +6,8 @@ format:
     height: 750
     theme: [default, custom.scss]
     slide-number: true
+    standalone: true
+    embed-resources: true
 editor: visual
 ---
 
@@ -111,7 +113,7 @@ main_plot
 
 ## Example 2: Change bin width
 
--   You may change bin width using slider
+You may change bin width using slider
 
 ```{r, echo = FALSE}
 # create data ----
