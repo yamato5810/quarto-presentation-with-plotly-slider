@@ -1,0 +1,35 @@
+/*-- scss:defaults --*/
+$body-bg: #e9fffa;
+
+
+/*-- scss:rules --*/
+
+// title and headings
+
+#title-slide {
+    text-align: left;
+    margin-top: 2em;
+  
+
+    .title {
+      font-size: 2em;
+      font-family: system-ui;
+    }
+    
+    .author{
+      font-size: 1.0em;
+      font-family: system-ui;
+    }
+
+    .quarto-title-authors {
+      display: flex;
+      justify-content: left;
+      margin-top: 1.5em;
+      
+      .quarto-title-author {
+        padding-left: 0em;
+        padding-right: 0em;
+        width: 100%;
+      } 
+    }
+}
