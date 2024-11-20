@@ -2,11 +2,11 @@
 
 ## About this page
 
-This page is about Quarto presentation with Plotly slider. I made it as a trial so there is still room for improvement.
+This page is about Quarto presentation with Plotly slider. 
 
-To see the slide, you may download the [html file](/01_quarto_presentation_and_plotly/quarto_presentation_with_plotly_slider.html) and then open it.
+I made it as a trial so there is still room for improvement.
 
-If you want to see the pdf version of the slide, you may use quarto option to turn it into pdf file (Press E key).
+To see the slide, you may download the [html file](/01_quarto_presentation_and_plotly/quarto_presentation_with_plotly_slider.html). (Click the "Download raw file" button.)
 
 ## About folders in this site
 
@@ -17,9 +17,7 @@ If you want to see the pdf version of the slide, you may use quarto option to tu
 
 ## Notes
 
-I customized the slide a little bit with my favorites. You may change as you want in [this code](/01_quarto_presentation_and_plotly/custom.scss).
-
-------------------------------------------------------------------------
+I customized the slide a little bit with my favorites (e.g. colors). You may change as you want in [this code](/01_quarto_presentation_and_plotly/custom.scss).
 
 ## References
 
