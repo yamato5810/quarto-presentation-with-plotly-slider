@@ -1,5 +1,5 @@
 ---
-title: "Quarto Presentation with Plotly Slider"
+title: Quarto Presentation with <br> Plotly Slider
 format:
   revealjs:
     width: 1200
@@ -8,22 +8,29 @@ format:
     slide-number: true
     standalone: true
     embed-resources: true
-    pdf-separate-fragments: true
-    preview-links: true
 editor: visual
 ---
 
 ## About this slide
 
--   This is for someone who want to introduce interactive graphs in a presentation
+<br>
 
--   Specifically, I tried to make a slider in a slide.
+-   This is for someone who wants to introduce [interactive graphs]{style="color:red;"} in a presentation
 
--   Plotly is used so that you can zoom in and change the scale as you want
+-   Specifically, [Plotly slider]{style="color:red;"} is explained in this slide
 
-## Example 1: Change data size
+<br>
 
-You may change bin width using slider
+[What you can do with Plotly is ...]{style="text-decoration: underline;font-size: 1.05em;" }
+
+-   Zoom in and out
+
+-   Click and drag ('Pan'), etc.
+
+
+## Example 1: Change the number of samples
+
+-   You can change the number of samples using slider
 
 ```{r, echo = FALSE}
 # create data ----
@@ -111,18 +118,18 @@ main_plot <- main_plot |>
                    font = list(
                      size = 16
                    )
-                 ),
-                 autosize = F,
-                 width = 900,
-                 height = 450
+                 )
   )
+
 
 main_plot
 ```
 
-## Example 2: Change bin width
+[When the number of samples increases, the distribution is closer to normal distribution.]{style="font-size: 0.75em;"}
 
-You may change bin width using slider
+## Example 2: Change the bin width
+
+-   You can change the bin width using slider
 
 ```{r, echo = FALSE}
 # create data ----
@@ -131,17 +138,16 @@ simulation_data <- tibble::tibble(
 ) 
 
 
+
 # create steps and plot all traces ----
 steps <- list()
 
 main_plot <- plotly::plot_ly() 
 
 for (i in 1:5) {
-  data_converted <- simulation_data
-  
   main_plot <- plotly::add_histogram(
     p = main_plot,
-    data = data_converted,
+    data = simulation_data,
     x = ~value,
     visible = dplyr::if_else(i == 3, TRUE, FALSE),
     xbins = list(
@@ -180,11 +186,27 @@ main_plot <- main_plot |>
                    font = list(
                      size = 16
                    )
-                 ),
-                 autosize = F,
-                 width = 1000,
-                 height = 450
+                 )
   )
+
 
 main_plot
 ```
+
+[When the bin width is too small, the histogram shows significant variability. When it is too wide, the histogram loses detail.]{style="font-size: 0.75em;"}
+
+## Reference
+
+<br>
+
+-   Revealjs
+
+    <https://quarto.org/docs/presentations/revealjs/>
+
+-   Revealjs options
+
+    <https://quarto.org/docs/reference/formats/presentations/revealjs.html>
+
+-   Plotly slider
+
+    <https://plotly.com/r/sliders/>
