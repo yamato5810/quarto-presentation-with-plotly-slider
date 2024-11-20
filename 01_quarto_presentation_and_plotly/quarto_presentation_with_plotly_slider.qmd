@@ -8,6 +8,8 @@ format:
     slide-number: true
     standalone: true
     embed-resources: true
+    pdf-separate-fragments: true
+    preview-links: true
 editor: visual
 ---
 
