@@ -4,17 +4,16 @@ simulation_data <- tibble::tibble(
 ) 
 
 
+
 # create steps and plot all traces ----
 steps <- list()
 
 main_plot <- plotly::plot_ly() 
 
 for (i in 1:5) {
-  data_converted <- simulation_data
-  
   main_plot <- plotly::add_histogram(
     p = main_plot,
-    data = data_converted,
+    data = simulation_data,
     x = ~value,
     visible = dplyr::if_else(i == 3, TRUE, FALSE),
     xbins = list(
@@ -55,6 +54,7 @@ main_plot <- main_plot |>
                    )
                  )
   )
+
 
 main_plot
 
