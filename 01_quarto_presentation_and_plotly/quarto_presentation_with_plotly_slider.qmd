@@ -13,7 +13,11 @@ editor: visual
 
 ## About this slide
 
--   You may try this when you want to have some interactive graph
+-   This is for someone who want to introduce interactive graphs in a presentation
+
+-   Specifically, I tried to make a slider in a slide.
+
+-   Plotly is used so that you can zoom in and change the scale as you want
 
 ## Example 1: Change data size
 
@@ -105,7 +109,10 @@ main_plot <- main_plot |>
                    font = list(
                      size = 16
                    )
-                 )
+                 ),
+                 autosize = F,
+                 width = 900,
+                 height = 450
   )
 
 main_plot
@@ -171,7 +178,10 @@ main_plot <- main_plot |>
                    font = list(
                      size = 16
                    )
-                 )
+                 ),
+                 autosize = F,
+                 width = 1000,
+                 height = 450
   )
 
 main_plot
