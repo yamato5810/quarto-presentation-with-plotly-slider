@@ -21,12 +21,11 @@ editor: visual
 
 <br>
 
-[What you can do with Plotly is ...]{style="text-decoration: underline;font-size: 1.05em;" }
+[What you can do with Plotly is ...]{style="text-decoration: underline;font-size: 1.05em;"}
 
 -   Zoom in and out
 
 -   Click and drag ('Pan'), etc.
-
 
 ## Example 1: Change the number of samples
 
@@ -118,7 +117,10 @@ main_plot <- main_plot |>
                    font = list(
                      size = 16
                    )
-                 )
+                 ),
+                 autosize = F,
+                 width = 900,
+                 height = 450
   )
 
 
@@ -186,7 +188,10 @@ main_plot <- main_plot |>
                    font = list(
                      size = 16
                    )
-                 )
+                 ),
+                 autosize = F,
+                 width = 900,
+                 height = 450
   )
 
 
