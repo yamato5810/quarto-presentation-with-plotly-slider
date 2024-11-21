@@ -200,7 +200,7 @@ main_plot
 
 [When the bin width is too small, the histogram shows significant variability. When it is too wide, the histogram loses detail.]{style="font-size: 0.75em;"}
 
-## Reference
+## References
 
 <br>
 
